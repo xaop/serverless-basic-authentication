@@ -65,7 +65,7 @@ module.exports = class SetupBasicAuthentication {
     this.serverless.cli.consoleLog(`Basic Authentication: ${chalk.yellow('Adding function for Basic Authenticator')}`);
     const basicAuthenticator = {
       handler: 'basic_auth.basicAuth',
-      runtime: 'python3.6',
+      runtime: 'python3.9',
     };
 
     // add the basic authenticator function
